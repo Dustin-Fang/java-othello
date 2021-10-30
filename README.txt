@@ -1,15 +1,8 @@
 =:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=
-CIS 120 Game Project README
-PennKey: fdustin
+Game Project README
 =:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=
 
-===================
-=: Core Concepts :=
-===================
-
-- List the four core concepts, the features they implement, and why each feature
-  is an appropriate use of the concept. Incorporate the feedback you got after
-  submitting your proposal.
+- Key Features and Their Implementations
 
   1. 2D Arrays
      I use an 2D int array to represent the pieces on the Othello game board.
@@ -34,12 +27,9 @@ PennKey: fdustin
      in turns, the entire game can be played within JUnit tests. 
 
 =========================
-=: Your Implementation :=
+=: Class Overview :=
 =========================
 
-- Provide an overview of each of the classes in your code, and what their
-  function is in the overall game.
-  
   Othello.java - This class serves as the model of the game. It maintains and updates
                  internal state using defined methods. 
   Pair.java - This is a utility class that store pairs of two ints. This is primarily used
@@ -49,25 +39,3 @@ PennKey: fdustin
                         for undo functionality and allows games to be saved and loaded.
 
 
-- Were there any significant stumbling blocks while you were implementing your
-  game (related to your design, or otherwise)?
-
-
-- Evaluate your design. Is there a good separation of functionality? How well is
-  private state encapsulated? What would you refactor, if given the chance?
-
-    I would refactor my GameOver checking a bit. I check for turns to be passed
-    and gameOvers with the same function. I would seperate these in the future.
-    
-    In terms of encapsulation, I made sure to generate copies when using retrieving
-    fields or data in reference classes. However, there are methods defined in Othello.java
-    that allow modification of the internal state, but these methods are primarily used for
-    JUnit testing. These methods would not be found in a public release.
-
-
-========================
-=: External Resources :=
-========================
-
-- Cite any external resources (libraries, images, tutorials, etc.) that you may
-  have used while implementing your game.
